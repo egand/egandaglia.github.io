@@ -6,14 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Enrico Gandaglia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/main.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
     <script src="main.js"></script>
 </head>
 
 <body>
-    <div id="portrait">
-        <img src="/images/myself.jpg">
+    <div class="container dark flex-col">
+        <div class="content">
+            <h1 class="typewriter" data-text="whoami"><span class="magenta">$</span> whoami</h1>
+            <div id="description" class="typewriter">
+                <p><span class="magenta">&lt;Hi!&gt;</span> My name is Enrico Gandaglia
+                    <span class="magenta">&lt;/Hi!&gt;</span>, I'm a student at IT Departiment in Turin and I currently
+                    work
+                    as
+                    freelance programmer and
+                    web developer.
+                </p>
+                <p>I'm naturally curious, perfectionist with an eye for details and willing to learn the most recent
+                    technologies used in the industry.</p>
+                <p>And yes, i'm a nerd inside. In my spare time I like to play the piano, watching movies and play video
+                    games ;)</p>
+                <p>For a complete review of my skills you can view my resume</p>
+            </div>
+            <div class="btn-container flex-row">
+                <div class="btn btn-normal text-large">View my work</div>
+                <div class="btn btn-highlight text-large">Hire me</div>
+            </div>
+        </div>
+
+
     </div>
+    <div class="container light flex-col">
+        <h1 class="typewriter"><span class="magenta">$</span> find / -name my_work.list</h1>
+        <div class="btn-container flex-row">
+            <div class="btn btn-normal text-large">View my work</div>
+            <div class="btn btn-highlight text-large">Hire me</div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </body>
 
 </html>

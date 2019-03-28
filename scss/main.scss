@@ -1,0 +1,103 @@
+@import "variables";
+@import "normalize";
+@import "mixin";
+
+body {
+    background-color: $color-dark;
+    font-family: 'Raleway',
+        sans-serif;
+    color: $color-light;
+    font-weight: 300;
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 3rem;
+
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 300;
+    }
+
+    &.light {
+        color: $color-dark;
+        background-color: white;
+    }
+
+    &.dark {
+        color: $color-light;
+        background-color: $color-dark;
+    }
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.btn-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    .btn {
+        margin-left: 2rem;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+
+.btn {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    cursor: pointer;
+
+    &.btn-normal {
+        @include btn($color-dark, $color-light, $color-light, $color-light-blue, $color-light, $color-light-blue);
+    }
+
+    &.btn-highlight {
+        @include btn($color-dark, $color-yellow, $color-yellow, $color-yellow, $color-light, $color-yellow);
+    }
+}
+
+.content {
+    width: 55%;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+#description {
+    margin-bottom: 3rem;
+}
+
+
+
+.text-large {
+    font-size: 1.2rem;
+}
+
+.highlight {
+    color: $color-yellow;
+}
+
+.magenta {
+    color: $color-magenta;
+}
+
+.color-l-blue {
+    color: $color-light-blue;
+}
