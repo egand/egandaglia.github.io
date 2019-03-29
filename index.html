@@ -19,8 +19,7 @@
                 <p><span class="magenta">&lt;Hi!&gt;</span> My name is Enrico Gandaglia
                     <span class="magenta">&lt;/Hi!&gt;</span>, I'm a student at IT Departiment in Turin and I currently
                     work
-                    as
-                    freelance programmer and
+                    as a freelance programmer and
                     web developer.
                 </p>
                 <p>I'm naturally curious, perfectionist with an eye for details and willing to learn the most recent
@@ -38,10 +37,46 @@
 
     </div>
     <div class="container light flex-col">
-        <h1 class="typewriter"><span class="magenta">$</span> find / -name my_work.list</h1>
-        <div class="btn-container flex-row">
-            <div class="btn btn-normal text-large">View my work</div>
-            <div class="btn btn-highlight text-large">Hire me</div>
+        <div class="content">
+            <h1 class="typewriter"><span class="magenta">$</span> find / -name my_work</h1>
+            <div class="work-container flex-row pt-2">
+                <div class="work-item">
+                    <img src="/images/casabianca.jpg" alt="casabiancaimmobiliare.com">
+                </div>
+                <div class="work-item">
+                    <img src="/images/henoel_grech.jpg" alt="henoelgrech.com">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container dark flex-col">
+        <div class="content">
+            <h1 class="typewriter"><span class="magenta">$</span> traceroute egand.github.io</h1>
+            <h5 class="highlight text-center">Do you have a question or want to work together?<br>Contact me!</h5>
+            <div id="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input class="input" name="name" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="input" type="text" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">message</label>
+                        <textarea class="input" name="message" id="message" rows="5" required></textarea>
+                    </div>
+                    <div class="submit">
+                        <div class="btn btn-normal text-large">Submit</div>
+                    </div>
+
+
+                </form>
+            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
